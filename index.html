@@ -56,18 +56,49 @@
 
 <li><a href="Vedi su GitHub">Vedi su GitHub</a></li>
 
-<h3>Contatti</h3>
-    <p>Sono presente su queste piattaforme professionali, dove puoi seguire i miei progetti e contattarmi.</p>
+<h3>Contattami</h3>
+    <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
 
-<li>
-  Profilo GitHub: <a href="github.com/mariorossi">github.com/mariorossi</a>
-</li>
- <p>
+<!-- Blocco main -->
+<main>
+  <!-- Form di contatto -->
+  <div>
+  <form action="mailto:mario.rossi@example.com" method="post" enctype="text/plain">
+    <label for="nome">Nome</label>
+    </div>
+    <input type="text" id="nome" name="nome" placeholder="il tuo nome"><br><br>
 
- </p>
-<li>
-  Profilo LinkedIn: <a href="linkedin.com/in/mariorossi">linkedin.com/in/mariorossi</a></li>
-</li>
+  <div
+    <label for="Motivo del contatto">Email</label>
+  </div>
+    <input type="email" id="email" name="email" placeholder="tu@esempio.it"><br><br>
+
+    <select name="Motivo del contatto">
+  <option value="" disabled selected hidden>Proposta di lavoro</option>
+  <option value="opzione1">Opzione 1</option>
+  <option value="opzione2">Opzione 2</option>
+  <option value="opzione3">Opzione 3</option>
+    </select>
+  <br><br>
+
+  <div
+    <label for="Motivo del contatto">Data preferita per la risposta</label>
+  </div>
+    <input type="date" id="data" name="data" placeholder="gg/mm/aaaa"><br><br>
+    
+<div
+    <label for="Messaggio">Messaggio</label><br><br>
+  </div>
+    
+  <form action="message" method="post">
+    <textarea id="messaggio" name="messaggio" rows="5" cols="20" placeholder="Scrivi qui il tuo messaggio..."></textarea><br><br>
+
+<flag> <input type="checkbox" id="consenso" name="consenso" value="consenso">
+  <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label><br><br>
+  
+    <input type="submit" value="Invia">
+  </form>
+</main>
 
 <p>
 <li>
