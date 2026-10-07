@@ -1,0 +1,208 @@
+/* ---------- Reset e base ---------- */
+{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222222;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    /* Metti la tua foto in assets/foto-header.jpg e verrà usata al posto del gradiente */
+    background-image: url("Media/Immagini/P1013099.jpg");
+    background-color: #24305e;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 16px 40px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.sottotitolo {
+    color: #ff6b5e;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* ---------- Navigazione ---------- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin: 30px 0 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #b5bd1e; /* verde-oliva */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #d3db2f;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin: 30px 0 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #b5bd1e; /* verde-oliva */
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav a:hover {
+    color: #d3db2f;
+}
+/* ---------- Contenuto principale ---------- */
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+    margin-top: 48px;
+}
+
+h2 {
+    color: #1f3a75; /* blu scuro */
+    font-size: 1.9rem;
+    margin-bottom: 16px;
+}
+
+/* ---------- Sezione "Chi sono" ---------- */
+.foto-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #dcdcdc;
+    color: #8a8a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.presentazione {
+    font-style: italic;
+}
+
+/* ---------- Sezione "Competenze" ---------- */
+.competenze-lista li {
+    padding: 6px 8px;
+    margin-bottom: 4px;
+}
+
+/* Righe alternate (1ª e 3ª) con sfondo chiaro */
+.competenze-lista li:nth-child(odd) {
+    background-color: #f2f2f7;
+}
+
+/* ---------- Sezione "Esperienze" ---------- */
+table {
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+caption {
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px 24px 6px 0;
+}
+
+/* ---------- Sezione "Progetti" ---------- */
+.progetto {
+    background-color: #fdf8e3; /* crema chiaro */
+    border: 1px solid #eadfa8;
+    padding: 16px 20px;
+    margin-top: 16px;
+}
+
+.progetto h3 {
+    margin-top: 0;
+}
+
+/* ---------- Sezione "Contattami" (form) ---------- */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 320px;
+    padding: 6px 8px;
+    margin-top: 4px;
+    font-size: 1rem;
+    border: 1px solid #767676;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.consenso {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.consenso input {
+    width: auto;
+}
+
+button[type="submit"] {
+    margin-top: 14px;
+    background-color: #1f3a75;
+    color: #fff;
+    border: none;
+    padding: 8px 24px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #16295a;
+}
+
+/* ---------- Piè di pagina ---------- */
+footer {
+    margin-top: 48px;
+    background-color: #1f3a75;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}

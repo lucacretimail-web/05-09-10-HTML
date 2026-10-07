@@ -5,34 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luca Creti</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Costruisci qui la tua Portfolio Page seguendo le istruzioni dell'esercizio -->
-
+  <!---------------------------------- Intestazione ---------------------------------->
+<header class="hero">
   <h1>Luca Creti</h1>
+   <p class="sottotitolo"> Studente Full Stack - Corso Epicode 2026</p>
 
-  
-    <p><strong>Studente Full Stack</strong> - Corso Epicode 2026</p>
+    <nav aria-label="Navigazione principale"></nav>
+     <ul>
+         <li><a href="#chi-sono">Chi sono</a></li>
+         <li><a href="#competenze">Competenze</a></li>
+         <li><a href="#progetti">Progetti</a></li>
+         <li><a href="#contatti">Contatti</a></li>
+     </ul>
+  </nav>
+ </header>
 
-    <ul>
-      <li><a href="#chi-sono">Chi sono</a></li>
-      <li><a href="#competenze">Competenze</a></li>
-      <li><a href="#progetti">Progetti</a></li>
-      <li><a href="#contatti">Contatti</a></li>
-    </ul>
-
-
+   <main>
+    <section id="chi sono">
     <h2>Chi sono</h2>
-    <p>Mi chiamo Luca Creti e sto imparando a programmare. Studio sviluppo web con <strong>Epicode</strong> e ogni
-      giorno aggiungo
-      qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come
-      funzionano le cose..</p>
 
-    <p>Vivo a Lecce. Ho una formazione precedente in Sociologia e un master in turismo e sto cambiando ramo. Cerco un
-      primo ruolo come sviluppatore.</p>
+    <div class="foto-placeholder" role="img" aria-label="Foto di Luca Creti (200x200)">200x200</div>
 
+    <p class="presentazione">
+      Mi chiamo Luca Creti e sto imparando a programmare. Studio sviluppo web con Epicode ogni
+      giorno aggiungo qualcosa di nuovo a questa pagina. Mi piace lavorare in gruppo, leggere documentazione tecnica e capire come funzionano le cose..</p>
+    </p>
+
+    <p>
+      Vivo a Lecce. Ho una formazione precedente in Sociologia e un master in turismo e sto cambiando ramo. Cerco un
+      primo ruolo come sviluppatore.
+    </p>
+    </section>
+
+  <!---------------------------------- Competenze ---------------------------------->
+    <section id="Competenze">
     <h2>Competenze</h2>
     <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
 
@@ -42,45 +53,95 @@
       <li>Git e GitHub - versionamento del codice</li>
       <li>Visual Studio Code - editor di lavoro</li>
     </ul>
+    </section>
 
-    <h3>Progetti</h3>
+  <!---------------------------------- Esperienze ---------------------------------->
+ <section id="Esperienze">
+  <h2>Esperienze</h2>
+  <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
+
+  <table>
+    <caption>Esperienze formative e lavorative</caption>
+    <thead>
+      <tr>
+        <th>Anno</th>
+        <th>Ruolo</th>
+        <th>Azienda/scuola</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2026</td>
+        <td>Studente Full Stack</td>
+        <td>Epicode</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>Master in Mgmt Del Turismo</td>
+        <td>Università</td>
+      </tr>
+      <tr>
+        <td>2023</td>
+        <td>Master in Mgmt Del Turismo</td>
+        <td>Università</td>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>Laurea in Sociologia</td>
+        <td>Università</td>
+      </tr>
+    </tbody>
+  </table>
+  </section>
+
+
+  <!---------------------------------- Progetti ---------------------------------->
+  <section id=progetti>
+  <h2>Progetti</h2>
     
       <p>
         I lavori fatti durante le prime settimane di corso.
       </p>
 
-      <h4>Pagina ricetta</h4>
+<article class="progetto">
 
-      
+      <h3>Pagina ricetta</h3>
         <p>
           Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un contenuto reale.
         </p>
 
 
-        <li><a href="Vedi su GitHub">Vedi su GitHub</a></li>
+        <a href="Vedi su GitHub">Vedi su GitHub</a>
+</article>
 
-        <h4>Card di presentazione</h4>
+<article class="progetto">
+        <h3>Card di presentazione</h3>
         <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.</p>
+        <a href="Vedi su GitHub">Vedi su GitHub</a>
+</article>
+  </section>
 
-        <li><a href="Vedi su GitHub">Vedi su GitHub</a></li>
+            <!---------------------------------- Form di contatto ---------------------------------->
 
-        <h3>Contattami</h3>
+    <section id=Contattami>
+        <h2>Contattami</h2>
         <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
-
-        <!-- Blocco main -->
-        <main>
-          <!-- Form di contatto -->
+        
           <div>
             <form action="mailto:mario.rossi@example.com" method="post" enctype="text/plain">
               <label for="nome">Nome</label>
           </div>
-          <input type="text" id="nome" name="nome" placeholder="il tuo nome"><br><br>
+          <input type="text" id="nome" name="nome" placeholder="il tuo nome">
+      <br><br>
 
           <div>
-            <label for="Motivo del contatto">Email</label>
+            <label for="Email">Email</label>
           </div>
           <input type="email" id="email" name="email" placeholder="tu@esempio.it"><br><br>
-
+           
+          <div>
+          <label for="Motivo">Motivo del contatto</label>
+          </div>
           <select name="Motivo del contatto">
             <option value="" disabled selected hidden>Proposta di lavoro</option>
             <option value="opzione1">Opzione 1</option>
@@ -90,29 +151,29 @@
           <br><br>
         
           <div>
-            <label for="Motivo del contatto">Data preferita per la risposta</label>
+            <label for="data-risposta">Data preferita per la risposta</label>
           </div>
           <input type="date" id="data" name="data" placeholder="gg/mm/aaaa"><br><br>
 
-          <div>
+          
             <label for="Messaggio">Messaggio</label><br><br>
-          </div>
-
           <form action="message" method="post">
             <textarea id="messaggio" name="messaggio" rows="5" cols="20"
               placeholder="Scrivi qui il tuo messaggio..."></textarea><br><br>
 
-            <flag> <input type="checkbox" id="consenso" name="consenso" value="consenso">
+            <label for="Consenso">
+            <input type="checkbox" id="consenso" name="consenso" value="consenso">
               <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label><br><br>
+              </label>
 
-              <input type="submit" value="Invia">
+              <button type="submit">Invia</button>
           </form>
+          </section>
         </main>
-
-        <p>
-          <li>
-            © 2026 Luca Creti
-          </li>
-        </p>
+        
+  <!---------------------------------- Piè di pagina ---------------------------------->
+         <footer>
+           <p>© 2026 Luca Creti</p> 
+         </footer>
 </body>
 <html>
