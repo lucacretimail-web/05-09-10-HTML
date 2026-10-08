@@ -7,20 +7,19 @@ body {
     margin: 0;
     font-family: roboto, sans-serif;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #f4f5f7;
     color: #222222;
 }
 
 /* ---------- Hero ---------- */
 .hero {
-    /* Metti la tua foto in assets/foto-header.jpg e verrà usata al posto del gradiente */
     background-image: url("Media/Immagini/P1013099.jpg");
-    background-color: #24305e;
+    background-color: #596184;
     background-size: cover;
     background-position: center;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
-    padding: 60px 16px 40px;
+    padding: 100px 16px 40px;
 }
 
 .hero h1 {
@@ -31,7 +30,7 @@ body {
 }
 
 .sottotitolo {
-    color: #ff6b5e;
+    color: #fcfcfc;
     font-style: italic;
     margin-top: 8px;
 }
@@ -39,41 +38,29 @@ body {
 /* ---------- Navigazione ---------- */
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
     padding: 0;
     margin: 30px 0 0;
-    flex-wrap: wrap;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 nav a {
-    color: #b5bd1e; /* verde-oliva */
+    color: #989f15; /* verde-oliva */
     font-weight: bold;
     text-decoration: underline;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
 nav a:hover {
     color: #d3db2f;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 0;
-    margin: 30px 0 0;
-    flex-wrap: wrap;
+    display: inline-block;
 }
 
-nav a {
-    color: #b5bd1e; /* verde-oliva */
-    font-weight: bold;
-    text-decoration: underline;
-}
-nav a:hover {
-    color: #d3db2f;
-}
+
 /* ---------- Contenuto principale ---------- */
 main {
     max-width: 760px;
@@ -91,32 +78,62 @@ h2 {
     margin-bottom: 16px;
 }
 
+.card-sezione h2:before {
+    content: "";              
+    display: inline-block;    
+    width: 25px;              
+    height: 4px;              
+    background-color: #ffcc00; /* Giallo oro */
+    margin-right: 12px;       
+    vertical-align: middle;   
+}
+
 /* ---------- Sezione "Chi sono" ---------- */
-.foto-placeholder {
-    width: 200px;
-    height: 200px;
-    background-color: #dcdcdc;
-    color: #8a8a8a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+
+.card-sezione  {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.foto-profilo {
+    float: left;
+    max-width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid #1f3a75;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.presentazione::first-letter {
+    font-size: 55px;
+    font-weight: bold;
+    color: #1f3a75;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
 }
 
 .presentazione {
-    font-style: italic;
+    font-style: roboto, sans-serif;
 }
 
 /* ---------- Sezione "Competenze" ---------- */
+.competenze lista {
+    list-style-position: inside;
+    padding left: 0;
+}
 .competenze-lista li {
-    padding: 6px 8px;
+    padding: 10px 15px;
     margin-bottom: 4px;
 }
-
-/* Righe alternate (1ª e 3ª) con sfondo chiaro */
 .competenze-lista li:nth-child(odd) {
-    background-color: #f2f2f7;
+    background-color: #ededf2;
 }
 
 /* ---------- Sezione "Esperienze" ---------- */
@@ -137,12 +154,25 @@ th, td {
 
 /* ---------- Sezione "Progetti" ---------- */
 .progetto {
-    background-color: #fdf8e3; /* crema chiaro */
-    border: 1px solid #eadfa8;
     padding: 16px 20px;
     margin-top: 16px;
 }
 
+.progetto.evidenziato {
+    background-color: #fdf8e3; /* crema chiaro */
+    border: 1px solid #eadfa8;
+}
+
+.badge-new {
+    display: inline-block;
+    background-color: #f11515; /* rosso */
+    color: #ffffff; /* bianco */
+    font-weight: bold;
+    padding: 2px 6px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
 .progetto h3 {
     margin-top: 0;
 }
@@ -164,11 +194,12 @@ textarea {
     padding: 6px 8px;
     margin-top: 4px;
     font-size: 1rem;
-    border: 1px solid #767676;
+    border: 2px solid #767676;
+    background-color: #efeff5;
 }
 
 textarea {
-    min-height: 90px;
+    min-height: 100px;
     resize: vertical;
 }
 
